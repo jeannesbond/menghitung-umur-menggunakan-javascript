@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Menghitung Umur Menggunakan Javascript</title>
+	</head>
+	<body>
+		<h3 id="age"></h3>
+		<script>
+			var dob = new Date("05/21/1998");
+			var age = Math.floor((Date.now() - dob.getTime()) / 31536000000);
+			document.getElementById("age").innerHTML = `Umur: ${age} tahun`;
+		</script>
+	</body>
+</html>
